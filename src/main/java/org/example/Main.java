@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         try (Connection conn = DriverManager.getConnection(
                 DBConfig.getUrl(),
-                DBComfig.getUser(),
+                DBConfig.getUser(),
                 DBConfig.getPassword())){
             System.out.println("Conectado exitosamente");
         }catch (SQLException e){
